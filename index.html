@@ -1,18 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-      <style>
-        .center-viz {
-          margin: 0 auto; /* Centers the div horizontally */
-          display: block; /* Ensures margin: auto works */
-        }
-      </style>
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SEIS 632 Project 1: 2013 NHL Draft Analysis</title>
-  </head>
-  <body>
-    <div class='tableauPlaceholder center-viz' id='viz1760241655417' style='position: relative'><noscript><a href='#'><img alt='2013 NHL Draft Analysis ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1760241655417');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1169px';vizElement.style.height='1681px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1169px';vizElement.style.height='1681px';} else { vizElement.style.width='100%';vizElement.style.height='3477px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    :root {
+      --card-bg: #ffffff;
+      --muted: #6b7280;
+      --gap: 16px;
+      --radius: 8px;
+    }
+
+    .before-draft {
+      width: 80%;
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 16px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #111827;
+    }
+
+    .bd-header h2 {
+      margin: 0 0 6px 0;
+      font-size: 1.5rem;
+    }
+
+    .bd-header .lead {
+      margin: 0 0 12px 0;
+      color: var(--muted);
+    }
+
+    .bd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: var(--gap);
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 12px;
+      box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+      text-align: center;
+    }
+
+    .kpi-title {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    .kpi-value {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .bd-details {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--gap);
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: 840px) {
+      .bd-details {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .details h3 {
+      margin-top: 0;
+    }
+
+    .details p {
+      margin: 8px 0 0 0;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .bd-footer {
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .center-viz {
+      margin: 0 auto;
+      display: block;
+    }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEIS 632 Project 1: 2013 NHL Draft Analysis</title>
+</head>
+
+<body>
+  <section class="before-draft">
+    <header class="bd-header">
+      <h2>Before the Draft: A Look at the 2012-13 Season</h2>
+      <p class="lead">Context and key storylines to set the stage for the 2013 NHL Draft analysis.</p>
+    </header>
+
+    <!-- New Section: Shortened Season -->
+    <article class="card details">
+      <h3>Shortened Season</h3>
+      <p>
+        The 2012-13 NHL season was shortened to 48 games due to a lockout.
+        This affected team performance, player statistics, and draft scouting evaluations.
+      </p>
+    </article>
+
+    <!-- New Section: Player Positions -->
+    <article class="card details">
+      <h3>NHL Player Positions</h3>
+      <p>
+        <strong>Forward (Center, Left Wing, Right Wing):</strong> Responsible for scoring and offensive play.<br>
+        <strong>Defenseman:</strong> Protects the goal, blocks shots, and supports offensive plays.<br>
+        <strong>Goaltender:</strong> Guards the net and prevents the opposing team from scoring.
+      </p>
+    </article>
+
+    <div class="bd-grid">
+      <div class="card">
+        <h3 class="kpi-title">Stanley Cup Champion</h3>
+        <p class="kpi-value">Chicago Blackhawks</p>
+      </div>
+
+      <div class="card">
+        <h3 class="kpi-title">Stanley Cup Runner-up</h3>
+        <p class="kpi-value">Boston Bruins</p>
+      </div>
+
+      <div class="card">
+        <h3 class="kpi-title">Worst Team (Lowest Points)</h3>
+        <p class="kpi-value">Colorado Avalanche</p>
+      </div>
+    </div>
+
+    <div class="bd-details">
+      <article class="card details">
+        <h3>Five Best Offensive Teams</h3>
+        <p>
+          Pittsburgh Penguins (165 goals scored)<br>
+          Chicago Blackhawks (155 goals scored)<br>
+          Montreal Canadiens (149 goals scored)<br>
+          Washington Capitals (149 goals scored)<br>
+          Tampa Bay Lightning (148 goals scored)
+        </p>
+      </article>
+
+      <article class="card details">
+        <h3>Five Best Defensive Teams</h3>
+        <p>
+          Chicago Blackhawks (102 goals allowed)<br>
+          Ottawa Senators (104 goals allowed)<br>
+          Boston Bruins (109 goals allowed)<br>
+          New York Rangers (112 goals allowed)<br>
+          St. Louis Blues (115 goals allowed)
+        </p>
+      </article>
+
+      <article class="card details">
+        <h3>Five Worst Offensive Teams</h3>
+        <p>
+          Nashville Predators (111 goals scored)<br>
+          New Jersey Devils (112 goals scored)<br>
+          Florida Panthers (112 goals scored)<br>
+          Ottawa Senators (116 goals scored)<br>
+          Colorado Avalanche (116 goals scored)
+        </p>
+      </article>
+
+      <article class="card details">
+        <h3>Five Worst Defensive Teams</h3>
+        <p>
+          Florida Panthers (171 goals allowed)<br>
+          Carolina Hurricanes (160 goals allowed)<br>
+          Calgary Flames (160 goals allowed)<br>
+          Colorado Avalanche (152 goals allowed)<br>
+          Tampa Bay Lightning (150 goals allowed)
+        </p>
+      </article>
+    </div>
+  </section>
+  <div class="tableauPlaceholder center-viz" id="viz1760241655417" style="position: relative">
+    <noscript><a href="#"><img alt="2013 NHL Draft Analysis "
+          src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis&#47;1_rss.png"
+          style="border: none" /></a></noscript><object class="tableauViz" style="display: none">
+      <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+      <param name="embed_code_version" value="3" />
+      <param name="site_root" value="" />
+      <param name="name" value="Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis" />
+      <param name="tabs" value="no" />
+      <param name="toolbar" value="yes" />
+      <param name="static_image"
+        value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Pr&#47;Project_1_2013_NHL_Draft&#47;2013NHLDraftAnalysis&#47;1.png" />
+      <param name="animate_transition" value="yes" />
+      <param name="display_static_image" value="yes" />
+      <param name="display_spinner" value="yes" />
+      <param name="display_overlay" value="yes" />
+      <param name="display_count" value="yes" />
+      <param name="language" value="en-US" />
+      <param name="filter" value="publish=yes" />
+    </object>
+  </div>
+  <script type="text/javascript">
+    var divElement = document.getElementById("viz1760241655417");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+    if (divElement.offsetWidth > 800) {
+      vizElement.style.width = "1169px";
+      vizElement.style.height = "1681px";
+    } else if (divElement.offsetWidth > 500) {
+      vizElement.style.width = "1169px";
+      vizElement.style.height = "1681px";
+    } else {
+      vizElement.style.width = "100%";
+      vizElement.style.height = "3477px";
+    }
+    var scriptElement = document.createElement("script");
+    scriptElement.src =
+      "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+</body>
+
 </html>
