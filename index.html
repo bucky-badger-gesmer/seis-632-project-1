@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
     }
 
     :root {
@@ -20,7 +20,8 @@
       max-width: 1200px;
       margin: 24px auto;
       padding: 16px;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial;
       color: #111827;
     }
 
@@ -47,7 +48,12 @@
       padding: 12px;
       box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
       text-align: center;
+      margin-bottom: 24px;
     }
+
+    /* .before-draft>.details+.details {
+      margin-top: 24px;
+    } */
 
     .kpi-title {
       font-size: 0.95rem;
@@ -103,87 +109,105 @@
 <body>
   <section class="before-draft">
     <header class="bd-header">
-      <h2 style="color: #648FFF">Before the Draft: A Look at the 2012-13 Season</h2>
-      <p class="lead">Context and key storylines to set the stage for the 2013 NHL Draft analysis.</p>
+      <h2 style="color: #648fff">
+        Before the Draft: A Look at the 2012-13 Season
+      </h2>
+      <p class="lead">
+        Context and key storylines to set the stage for the 2013 NHL Draft
+        analysis.
+      </p>
     </header>
 
     <!-- New Section: Shortened Season -->
     <article class="card details">
-      <h3 style="color: #785EF0">Shortened Season</h3>
+      <h3 style="color: #785ef0">Shortened Season</h3>
       <p>
-        The 2012-13 NHL season was shortened to 48 games due to a lockout.
-        This affected team performance, player statistics, and draft scouting evaluations.
+        The 2012-13 NHL season was shortened from 82 games to 48 games due to a lockout.
+        This affected team performance, player statistics, and draft scouting
+        evaluations.
+      </p>
+
+      <p>
+        Standings are determined by points, with 2 points for a win and 1
+        point for an overtime loss.
       </p>
     </article>
 
     <!-- New Section: Player Positions -->
     <article class="card details">
-      <h3 style="color: #DC267F">NHL Player Positions</h3>
+      <h3 style="color: #dc267f">NHL Player Positions</h3>
       <p>
-        <strong>Forward (Center, Left Wing, Right Wing):</strong> Responsible for scoring and offensive play.<br>
-        <strong>Defenseman:</strong> Protects the goal, blocks shots, and supports offensive plays.<br>
-        <strong>Goaltender:</strong> Guards the net and prevents the opposing team from scoring.
+        <strong>Forward (Center, Left Wing, Right Wing):</strong> Responsible
+        for scoring and offensive play.<br />
+        <strong>Defenseman:</strong> Protects the goal, blocks shots, and
+        supports offensive plays.<br />
+        <strong>Goaltender:</strong> Guards the net and prevents the opposing
+        team from scoring.
       </p>
     </article>
 
     <div class="bd-grid">
       <div class="card">
-        <h3 class="kpi-title" style="color: #FE6100">Stanley Cup Champion</h3>
+        <h3 class="kpi-title" style="color: #fe6100">Stanley Cup Champion</h3>
         <p class="kpi-value">Chicago Blackhawks</p>
       </div>
 
       <div class="card">
-        <h3 class="kpi-title" style="color: #FE6100">Stanley Cup Runner-up</h3>
+        <h3 class="kpi-title" style="color: #fe6100">
+          Stanley Cup Runner-up
+        </h3>
         <p class="kpi-value">Boston Bruins</p>
       </div>
 
       <div class="card">
-        <h3 class="kpi-title" style="color: #FE6100">Worst Team (Lowest Points)</h3>
-        <p class="kpi-value">Colorado Avalanche</p>
+        <h3 class="kpi-title" style="color: #fe6100">
+          Worst Team (Lowest Points)
+        </h3>
+        <p class="kpi-value">Florida Panthers (36 Points)</p>
       </div>
     </div>
 
     <div class="bd-details">
       <article class="card details">
-        <h3 style="color: #FFB000">Five Best Offensive Teams</h3>
+        <h3 style="color: #ffb000">Five Best Offensive Teams</h3>
         <p>
-          Pittsburgh Penguins (165 goals scored)<br>
-          Chicago Blackhawks (155 goals scored)<br>
-          Montreal Canadiens (149 goals scored)<br>
-          Washington Capitals (149 goals scored)<br>
+          Pittsburgh Penguins (165 goals scored)<br />
+          Chicago Blackhawks (155 goals scored)<br />
+          Montreal Canadiens (149 goals scored)<br />
+          Washington Capitals (149 goals scored)<br />
           Tampa Bay Lightning (148 goals scored)
         </p>
       </article>
 
       <article class="card details">
-        <h3 style="color: #FFB000">Five Best Defensive Teams</h3>
+        <h3 style="color: #ffb000">Five Best Defensive Teams</h3>
         <p>
-          Chicago Blackhawks (102 goals allowed)<br>
-          Ottawa Senators (104 goals allowed)<br>
-          Boston Bruins (109 goals allowed)<br>
-          New York Rangers (112 goals allowed)<br>
+          Chicago Blackhawks (102 goals allowed)<br />
+          Ottawa Senators (104 goals allowed)<br />
+          Boston Bruins (109 goals allowed)<br />
+          New York Rangers (112 goals allowed)<br />
           St. Louis Blues (115 goals allowed)
         </p>
       </article>
 
       <article class="card details">
-        <h3 style="color: #FFB000">Five Worst Offensive Teams</h3>
+        <h3 style="color: #ffb000">Five Worst Offensive Teams</h3>
         <p>
-          Nashville Predators (111 goals scored)<br>
-          New Jersey Devils (112 goals scored)<br>
-          Florida Panthers (112 goals scored)<br>
-          Ottawa Senators (116 goals scored)<br>
+          Nashville Predators (111 goals scored)<br />
+          New Jersey Devils (112 goals scored)<br />
+          Florida Panthers (112 goals scored)<br />
+          Ottawa Senators (116 goals scored)<br />
           Colorado Avalanche (116 goals scored)
         </p>
       </article>
 
       <article class="card details">
-        <h3 style="color: #FFB000">Five Worst Defensive Teams</h3>
+        <h3 style="color: #ffb000">Five Worst Defensive Teams</h3>
         <p>
-          Florida Panthers (171 goals allowed)<br>
-          Carolina Hurricanes (160 goals allowed)<br>
-          Calgary Flames (160 goals allowed)<br>
-          Colorado Avalanche (152 goals allowed)<br>
+          Florida Panthers (171 goals allowed)<br />
+          Carolina Hurricanes (160 goals allowed)<br />
+          Calgary Flames (160 goals allowed)<br />
+          Colorado Avalanche (152 goals allowed)<br />
           Tampa Bay Lightning (150 goals allowed)
         </p>
       </article>
