@@ -1,8 +1,11 @@
-- Introduce ourselves (Aaron and David):
+- (AARON/DAVID) Introduce ourselves:
     - We are DA Sports Analytics, introduce our names
     - We selected the 2013 NHL Draft dataset for our project
     - Take some time to set the stage and go over the 2012-13 NHL Season, player positions, etc.
-- Briefly describe the dataset and what we did to clean it. The dataset contained the following useful columns (Aaron):
+
+
+- (AARON) Briefly describe the dataset and what we did to clean it. 
+The dataset contained the following useful columns:
     - Round number
     - Pick number
     - Overall pick number
@@ -15,13 +18,17 @@
     - Player weight/height ratio
     - Player amateur league
     - Player amateur team
-- Cleaning process involed (David):
+
+
+- (DAVID) Cleaning process involed:
     - Mapping team names to their full names (i.e., COL -> Colorado Avalanche)
     - Mapping player positions to a primary position (i.e., C/LW -> C)
     - Subsequently mapped each primary position to full position name (i.e., C -> Center)
     - Mapped player place of birth to the full country name (i.e., CAN -> Canada)
     - Added a column for mapping player amateur team to the country they played in (i.e., Halifax -> Canada)
-- Visualizations created (David):
+
+
+- (DAVID) Visualizations created:
     - Begin with KPI metrics at the top (# of players drafted, total countries of birth, etc.)
     - A global map of player places of birth
     - A table breaking down each team's draft picks by position
@@ -30,7 +37,9 @@
     - A scatter plot of player height vs pick number
     - A scatter plot of player weight vs pick number
     - A scatter plot of player weight/height ratio vs pick number
-- We added the following filters (David):
+
+
+- (DAVID) We added the following filters (David):
     - Team
     - Player
     - Primary Postition
@@ -40,13 +49,17 @@
     - Amateur team location
     - Draft round
     - Draft pick
-- Breakdown of data insights (Aaron):
+
+
+- (AARON) Breakdown of data insights:
     - Most players were drafted from Canada, followed by the United States, then Sweden
     - Most players drafted played on an amateur team in Canada
     - Most players drafted were Defense, with least being Goalies
-    - Left wings tend to be more prevalent than right wings simply due to availability; left wings are right handed and right wings are left-handed
+    - Left wings tend to be more prevalent than right wings simply due to availability;
+    left wings are right handed and right wings are left-handed
     - Note that in things like the first round, no goalies were selected
-    - Go in detail on how some teams obviously loaded up on defensive players or defensive players depending on how they performed the season prior
+    - Go in detail on how some teams obviously loaded up on defensive players or defensive players
+    depending on how they performed the season prior
         - Florida Panthers were really bad on both offense and defense, so needed to draft both offensively and defensively
         - Ottawa Senators were really bad on offense, which lead them to drafting 5 offensive players
         - Calgary Flames were really bad on defense, which lead them to drafting 4 defensive players
@@ -54,9 +67,13 @@
         - This seems to be somewhat true, but not a strong correlation, but does appear statistically signifcant due to the small p value
         - But this does seem to be more true when looking at goalies, especially taller goalies
 
-- Conclusion (Aaron and David):
-    - Canadian players dominated the draft (96 out of 211), followed by the United States (57), then Sweden with (23), and Finland (11). Other countries had less than 10 players
-    - Most players drafted played on an amateur team in Canada (101), then the United States (64), Sweden (26), and Finland (10). Other countries had less than 10 players.
-    - Based on sheer volume, teams should probably prioritize looking for players in Canada, the United States, and Sweden, but there may be an opportunity to find players in other countries like Finland, Russia, Switzerland, and Austria
+
+- (AARON/DAVID) Conclusion:
+    - Canadian players dominated the draft (96 out of 211), followed by the United States (57), then Sweden with (23), and Finland (11).
+    Other countries had less than 10 players
+    - Most players drafted played on an amateur team in Canada (101), then the United States (64), Sweden (26), and Finland (10).
+    Other countries had less than 10 players.
+    - Based on sheer volume, teams should probably prioritize looking for players in Canada, the United States, and Sweden,
+    but there may be an opportunity to find players in other countries like Finland, Russia, Switzerland, and Austria
     - In general, it does seem like bigger players get picked earlier, but this is not a strong correlation
     - This may present an opportunity in the future for teams to target smaller, faster skaters
